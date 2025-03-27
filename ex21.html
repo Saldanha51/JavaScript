@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inverter texto</title>
+</head>
+<body>
+    <label for="tex">Digite o texto</label>
+    <input type="text" id="tex">
+    <button onclick="inverte(tex.value,)">Inverter</button>
+    <p id="resultado">_</p>
+    <script>
+        function inverte(a,){
+            var invertido = document.getElementById("resultado");
+            invertido.textContent = a.split("").reverse().join("")
+        }
+    </script> 
+</body>
+</html>

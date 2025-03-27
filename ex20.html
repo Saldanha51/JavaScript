@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Primos</title>
+</head>
+<body>
+    <label for="num1">Digite um número: </label>
+    <input type="number" id="num1">
+    <button onclick="primo(num1.value,)">Verificar</button>
+    <p id="resultado"></p>
+    <script>
+        function primo(a,){
+            let na = parseFloat(a);
+            let conta = 0;
+            let resultado = document.getElementById("resultado");
+
+            for (let i = 1; i <= na; i++) {
+                if (na % i ==0) {
+                    conta = conta + 1;
+                }
+            }
+            if (conta == 2) {
+                resultado.textContent = "Número primo";
+            }else{
+                resultado.textContent = "Número não primo";
+            }
+        }
+    </script> 
+</body>
+</html>
