@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contando Letras</title>
+</head>
+<body>
+    <label for="tex">Digite o texto: </label>
+    <input type="text" id="tex">
+    <label for="leta">Digite a letra: </label>
+    <input type="text" id="leta">
+    <button onclick="contar(tex.value,leta.value)">Contar</button>
+    <p id="resultado"></p>
+    <script>
+        function contar(t,l){
+            var resul = document.getElementById("resultado");
+            var quant = 0;
+            var tamanho = t.length
+            for(var i = 0; i<tamanho ;i++){
+                if (t.charAt(i) == l){
+                    quant = quant + 1;
+                }
+            }
+            resul.textContent = "Quantidade de vezes que a letra '"+l+"' aparece no texto: "+quant;
+        }
+    </script> 
+</body>
+</html>
