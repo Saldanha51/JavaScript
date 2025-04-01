@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DO E WHILE</title>
+</head>
+<body>
+    <h1>MÚLTIPLOS DE 5 </h1>
+    <div id="multiplo"></div>
+
+    <script>
+        let mult = document.getElementById("multiplo");
+        let contador = 1;
+        let num = "";
+
+        do{
+            if(contador % 5 == 0){
+                num += contador + "<br>";
+            }
+            contador++;
+        }
+        while(contador <= 100);
+
+        multiplo.innerHTML = num;
+    </script>
+</body>
+</html>
