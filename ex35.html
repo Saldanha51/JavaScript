@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOVER E MOUSEOVER</title>
+</head>
+<body>
+    <h1>HOVER E MOUSEOVER</h1>
+    <div id="meudiv" style="width: 100px; height: 100px; background-color: blueviolet;">
+        Passe o mouse aqui!
+    </div>
+
+    <script>
+        const div = document.getElementById("meudiv");
+        div.addEventListener('mouseover', function(){
+            div.style.backgroundColor = "lightgreen";
+        });
+
+        div.addEventListener('mouseout', function(){
+            div.style.backgroundColor = 'lightblue';
+        });
+    </script>
+</body>
+</html>
